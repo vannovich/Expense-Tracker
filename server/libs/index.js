@@ -31,3 +31,21 @@ export const createJWT = (id) => {
     },
   );
 };
+
+export function getMonthDate(index) {
+  const months = [
+    "January",
+    "february",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  return months[index];
+}
