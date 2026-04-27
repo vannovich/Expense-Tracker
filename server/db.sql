@@ -14,7 +14,7 @@ CREATE TABLE tbluser (
 
 CREATE TABLE tblaccount (
     id SERIAL NOT NULL PRIMARY KEY,
-    user_id INTEGER NOT NULL REFERENCES tbluser(id)
+    user_id INTEGER NOT NULL REFERENCES tbluser(id),
     account_name VARCHAR(50) NOT NULL,
     account_number VARCHAR(50) NOT NULL,
     account_balance NUMERIC(10, 2) NOT NULL,
